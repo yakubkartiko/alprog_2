@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!-- Mendefinisikan dokumen sebagai HTML5 -->
+<html lang="id">
+<!-- Tag pembuka html dengan atribut bahasa Indonesia -->
+<head>
+    <!-- Bagian head berisi metadata dan resource yang diperlukan halaman -->
+    <meta charset="UTF-8">
+    <!-- Mendefinisikan encoding karakter sebagai UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Mengatur viewport untuk tampilan responsif di perangkat mobile -->
+    <title>Sistem Informasi Statistik Kecamatan Colomadu</title>
+    <!-- Judul halaman yang akan ditampilkan di tab browser -->
+    <style>
+        /* Bagian CSS untuk mengatur tampilan halaman */
+        body {
+            /* Mengatur properti dasar untuk seluruh konten halaman */
+            font-family: Arial, sans-serif; /* Menggunakan font Arial atau sans-serif sebagai fallback */
+            line-height: 1.6; /* Mengatur jarak antar baris */
+            margin: 0; /* Menghilangkan margin default */
+            padding: 0; /* Menghilangkan padding default */
+        }
+        header {
+            /* Mengatur tampilan header */
+            position: relative; /* Diperlukan untuk positioning absolut elemen child */
+            color: white; /* Warna teks header */
+            margin-bottom: 20px; /* Jarak bawah header */
+            width: 100%; /* Lebar penuh */
+        }
+        .header-image {
+            /* Mengatur gambar header */
+            width: 100%; /* Lebar penuh */
+            height: 300px; /* Tinggi tetap */
+            object-fit: cover; /* Memastikan gambar menutupi area dengan proporsi yang tepat */
+        }
+        .header-content {
+            /* Mengatur konten yang berada di atas gambar header */
+            position: absolute; /* Posisi absolut relatif terhadap header */
+            top: 50%; /* Posisi vertikal di tengah */
+            right: 50px; /* Jarak dari kanan */
+            transform: translateY(-50%); /* Menyesuaikan posisi vertikal agar benar-benar di tengah */
+            display: flex; /* Menggunakan flexbox untuk layout */
+            align-items: center; /* Mensejajarkan item secara vertikal */
+            background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan */
+            padding: 20px; /* Ruang dalam */
+            border-radius: 10px; /* Sudut membulat */
+        }
+        .logo {
+            /* Mengatur tampilan logo */
+            width: 100px; /* Lebar logo */
+            height: 100px; /* Tinggi logo */
+            margin-right: 20px; /* Jarak kanan dari logo */
+        }
+        .header-text {
+            /* Mengatur teks dalam header */
+            padding: 0; /* Tanpa padding */
+            background-color: transparent; /* Latar belakang transparan */
+        }
+        main {
+            /* Mengatur bagian utama konten */
+            padding: 0 20px; /* Padding kiri dan kanan */
+            max-width: 1000px; /* Lebar maksimum konten */
+            margin: 0 auto; /* Posisi di tengah halaman */
+        }
+        h1 {
+            /* Mengatur judul utama */
+            font-size: 24px; /* Ukuran font */
+            margin: 0; /* Tanpa margin */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Efek bayangan teks */
+        }
+        h2 {
+            /* Mengatur judul sekunder */
+            text-align: center; /* Teks rata tengah */
+        }
+        table {
+            /* Mengatur tabel */
+            width: 80%; /* Lebar tabel */
+            border-collapse: collapse; /* Menggabungkan border sel */
+            margin: 20px auto; /* Margin dan posisi tengah */
+        }
+        th, td {
+            /* Mengatur sel header dan data tabel */
+            border: 1px solid #ddd; /* Border sel */
+            padding: 8px; /* Padding dalam sel */
+            text-align: left; /* Teks rata kiri */
+        }
+        th {
+            /* Mengatur khusus untuk header tabel */
+            background-color: #D76824; /* Warna latar header */
+            color: white; /* Warna teks header */
+        }
+        footer {
+            /* Mengatur footer */
+            padding: 20px; /* Padding footer */
+            text-align: center; /* Teks rata tengah */
+        }
+    </style>
+</head>
+<body>
+    <!-- Bagian body berisi konten yang akan ditampilkan -->
+    <header>
+        <!-- Header halaman dengan gambar dan logo -->
+        <img class="header-image" src="https://cdn.idntimes.com/content-images/community/2023/08/shutterstock-1132238027-22c6273947b9dcf628e1eb033e6f1a1f-0c22e3c45a6ac0cea06ab4a79e5c41d2.jpg" alt="Kantor Kecamatan Colomadu">
+        <!-- Gambar header kantor kecamatan -->
+        <div class="header-content">
+            <!-- Konten header yang berisi logo dan judul -->
+            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Seal_of_Karanganyar_Regency.svg/671px-Seal_of_Karanganyar_Regency.svg.png" alt="Logo Kabupaten Karanganyar">
+            <!-- Logo kabupaten -->
+            <div class="header-text">
+                <!-- Teks judul -->
+                <h1>SISTEM INFORMASI STATISTIK KECAMATAN COLOMADU<br>KABUPATEN KARANGANYAR</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Konten utama halaman -->
+        <h2>Jumlah Penduduk menurut Jenis Kelamin dan Desa di Kecamatan Colomadu (Jiwa) Tahun 2023</h2>
+        <!-- Judul tabel -->
+        <table>
+            <!-- Tabel data penduduk -->
+            <thead>
+                <!-- Header tabel -->
+                <tr>
+                    <th>Desa</th>
+                    <th>Laki-laki</th>
+                    <th>Perempuan</th>
+                    <th>Jumlah</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Isi tabel dengan data penduduk per desa -->
+                <tr>
+                    <td>Ngasem</td>
+                    <td>4,879</td>
+                    <td>4,903</td>
+                    <td>9,782</td>
+                </tr>
+                <tr>
+                    <td>Bolon</td>
+                    <td>4,644</td>
+                    <td>4,642</td>
+                    <td>9,286</td>
+                </tr>
+                <tr>
+                    <td>Malangjiwan</td>
+                    <td>7,317</td>
+                    <td>7,320</td>
+                    <td>14,637</td>
+                </tr>
+                <tr>
+                    <td>Paulan</td>
+                    <td>2,765</td>
+                    <td>2,784</td>
+                    <td>5,549</td>
+                </tr>
+                <tr>
+                    <td>Gajahan</td>
+                    <td>2,111</td>
+                    <td>2,144</td>
+                    <td>4,255</td>
+                </tr>
+                <tr>
+                    <td>Blulukan</td>
+                    <td>3,887</td>
+                    <td>3,874</td>
+                    <td>7,761</td>
+                </tr>
+                <tr>
+                    <td>Gawanan</td>
+                    <td>4,330</td>
+                    <td>4,345</td>
+                    <td>8,675</td>
+                </tr>
+                <tr>
+                    <td>Gedongan</td>
+                    <td>4,424</td>
+                    <td>4,442</td>
+                    <td>8,866</td>
+                </tr>
+                <tr>
+                    <td>Tohudan</td>
+                    <td>3,720</td>
+                    <td>3,736</td>
+                    <td>7,456</td>
+                </tr>
+                <tr>
+                    <td>Baturan</td>
+                    <td>5,935</td>
+                    <td>5,936</td>
+                    <td>11,871</td>
+                </tr>
+                <tr>
+                    <td>Klodran</td>
+                    <td>3,561</td>
+                    <td>3,562</td>
+                    <td>7,123</td>
+                </tr>
+                <tr>
+                    <td><strong>Jumlah/Total</strong></td>
+                    <td><strong>47,573</strong></td>
+                    <td><strong>47,688</strong></td>
+                    <td><strong>95,261</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <!-- Footer halaman -->
+        <p>Sumber: BPS Kabupaten Karanganyar</p>
+        <!-- Menampilkan sumber data -->
+    </footer>
+</body>
+</html>
